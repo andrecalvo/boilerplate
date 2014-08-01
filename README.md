@@ -25,8 +25,8 @@ The following are found in sass/partials_grid.scss
 
 Usage
 --------
-Run "npm install" to install all node dependencies 
-Run "grunt watch" in terminal to get grunt running.
-To set columns use the columns() mixin. This takes in a parameter between 1 and however many columns you have set in your configuration.
-I've included some mixins and extra stuff I like using, for example an icon font and some mixins that can be useful.
+*    Run "npm install" to install all node dependencies 
+*    Run "grunt watch" in terminal to get grunt running.
+*    To set columns use the columns() mixin. This takes in a parameter between 1 and however many columns you have set in your configuration.
+*    I've included some mixins and extra stuff I like using, for example an icon font and some mixins that can be useful.
 

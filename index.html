@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/styles.css">
+       	<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/styles-ie.css">
+ 		<!--<![endif]-->
+ 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>        
+       	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </head>
+    <body>
+    	
+    <main>
+        <section class="intro">
+			<h1>A simple responsive boilerplate</h1>
+			<p>This is a really simple responsive boilerplate based on percentage widths/gutters. It's essentially a really simple grid that I like to use as a foundation for projects. It's mobile first, uses SASS and has some Grunt tasks ready for use. It works in IE8 and up (in IE8 it will just set a fixed width to the container which is configuragle in _grid.scss).</p>        
+            <ul>
+                <li><a data-icon="&#xe602;" href="https://twitter.com/AndreCalvo" target="_blank">@andrecalvo</a></li>
+                <li><a data-icon="&#xe600;" href="mailto:andresrcalvo@gmail.com" target="_blank">andresrcalvo@gmail.com</a></li>
+            </ul>
+    	</section>
+        <section class="guide">
+            <article>
+                <h2>Features</h2>
+                <ul>
+                    <li>Mobile first</li>
+                    <li>Responsive (percentage based)</li>
+                    <li>Configurable Grid</li>
+                    <li>Grunt SASS compilation, Autoprefixer LiveReload and CSS/JS minification</li>                    
+                    <li>Selectivizr and Modernizr included</li>
+                    <li>IE8+</li>                    
+                </ul>
+            </article>
+            <article>
+                <h2>Configuration</h2>
+                    <p>The following are found in sass/partials_grid.scss</p>
+                <ul>
+                    <li><strong>$content-width</strong> - The maximum size that you want your rows to be (default: 1300px)</li>
+                    <li><strong>$gutter</strong> - A percentage value of how big you want your gutters (default: 2.5%) </li>
+                    <li><strong>$columns</strong> - How many columns you want in your grid (default: 12)</li>
+                    <li><strong>$ie8-content-width</strong> - The fixed width that IE8 will fall back to (default: 1024px)</li>
+                </ul>    
+            </article>
+            <article>
+                <h2>Usage</h2>
+                <ul>
+                    <li>Run "npm install" to install all node dependencies.</li>
+                    <li>Run "grunt watch" in terminal to get grunt running.</li>
+                    <li>To set columns use the columns() mixin. This takes in a parameter between 1 and however many columns you have set in your configuration.</li>
+                    <li>I've included some mixins and extra stuff I like using, for example an icon font and some mixins that can be useful.</li>
+                    <li>Check out some grid examples below...</li>
+                </ul>
+              
+            </article>            
+        </section>
+        <section class="example-1">
+            <h2>3 X 4 columns</h2>
+            <article>
+                <img src="http://placehold.it/350x250" />                                         
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+            </article>
+            <article>
+                <img src="http://placehold.it/350x250" />                                         
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+            </article>
+            <article>
+                <img src="http://placehold.it/350x250" />                                         
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+            </article>            
+        </section>
+        <section class="example-2">
+            <h2>2 X 6 columns</h2>
+            <article>
+                <img src="http://placehold.it/350x250" />                                         
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+            </article>
+            <article>
+                <img src="http://placehold.it/350x250" />                                         
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+            </article>          
+        </section>
+        <section class="example-3">
+            <h2>4 columns and 8 columns</h2>
+            <article>
+                <img src="http://placehold.it/350x250" />                                                        
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>  
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>   
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat erat, pellentesque ut dui sit amet, facilisis laoreet odio. Ut ut fringilla purus. Integer tristique dui at odio sollicitudin vestibulum. Maecenas mi neque, egestas vel leo pretium, elementum porttitor felis.</p>                                                
+            </article>          
+        </section>        
+    </main>
+
+    </body>
+</html>

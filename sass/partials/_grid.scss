@@ -1,0 +1,49 @@
+/*===================
+Grid
+===================*/
+
+//Configure me 
+$content-width: 1300px;
+$gutter: 2.5%;
+$columns: 12;
+$ie8-content-width: 1024px;
+
+/*===================*/
+
+$column-width: ( 100% / $columns ); 
+
+@mixin full-width {	
+	width: 100%;
+}
+
+@mixin row {
+	@include group;
+	max-width: $content-width;
+	margin: 0 auto;
+	
+	//For ie8 set a fixed width to stop responsiveness
+	width: $ie8-content-width;
+
+	//If media queries are supported then override the ie8 width
+	@media only screen and (min-width:0px) {
+		width: 100 - ( $gutter * 2 );
+	}
+
+}
+
+@mixin columns( $number ) {	
+	@include inline-block;
+	float: left;
+	margin: 0 $gutter;
+
+	@if $number == 1 {
+		width: $column-width - ($gutter * 2);
+	}
+
+	@else {
+		width: ( $number * $column-width ) - ( $gutter * 2 );
+	}
+}
+
+
+

@@ -1,0 +1,14 @@
+/*===================
+Media query enabled browsers
+===================*/
+
+@import "partials/_normalize";
+@import "partials/_mixins.scss";
+@import "partials/_grid.scss";
+@import "partials/_base.scss";
+@import "partials/_typography.scss";
+
+//desktop breakpoint
+@media only screen and (min-width : 768px){
+	@import "partials/_768.scss";
+}

@@ -1,0 +1,67 @@
+/*===================
+768 and up - "Desktop"
+===================*/
+
+main {
+	@include full-width;
+	background: white;
+
+	.intro {
+		text-align: center;
+
+		p {
+			@include columns(8);
+			float: none;
+		}
+
+		ul {
+			@include columns(4);
+			@include rem(margin-top, 2);
+			@include rem(margin-bottom, 2);
+			
+			float: none;
+
+			li {
+				display: inline;
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.guide {
+		article {
+			@include columns(4);
+
+			ul {
+				@include inline-block;
+			}
+		}
+
+
+	}
+
+	section[class*='example-'] {	
+		&.example-1 {
+			article {
+				@include columns(4);
+			}
+		}
+
+		&.example-2 {
+			article {
+				@include columns(6);
+			}
+		}
+
+		&.example-3 {
+			article:first-of-type {
+				@include columns(4);
+			}
+
+			article:last-of-type {
+				@include columns(8);
+			}
+		}	
+	}
+}
+

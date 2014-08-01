@@ -1,0 +1,117 @@
+/*===================
+Base style - Mobile
+===================*/
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+	&:hover {
+		color: #218AB2;
+	}
+}
+
+main {
+	@include full-width;
+	background: white;
+
+	.intro {
+		@include row;
+		@include group;
+		background: white;
+		text-align: left;
+
+		h1 {
+			@include columns(12);
+			@include rem(font-size, 2);
+			@include rem(margin-top, 2);
+			@include rem(margin-bottom, 2);
+		}
+
+		p {
+			@include columns(12);
+			float: none;
+		}
+
+		ul {
+			@include columns(12);
+			@include rem(margin-top, 2);
+			@include rem(margin-bottom, 2);
+			
+
+			li {
+				list-style: none;
+			}
+		}
+	}
+
+	.guide {
+		@include row;
+		@include group;
+		padding: 2em 0;
+		background: white;
+
+		article {
+			@include columns(12);
+
+			p {
+				@include rem(padding-bottom, 2em);
+			}
+
+			ul {
+				@include inline-block;
+
+				li {
+					list-style: none;
+					@include rem(padding-bottom, 2);
+				}
+			}
+		}
+
+
+	}
+
+	section[class*='example-']{
+		@include row;
+		@include group;		
+		@include rem(margin-bottom, 4em);
+		background: white;
+
+		h2 {
+			@include columns(12);
+			@include rem(font-size, 2em);
+			@include rem(padding-bottom, 2em);
+
+		}
+
+		p {
+			@include rem(margin-bottom, 2);
+		}
+		
+		&.example-1 {
+			article {
+				@include columns(12);
+			}
+		}
+
+		&.example-2 {
+			article {
+				@include columns(12);
+			}
+		}
+
+		&.example-3 {
+			article:first-of-type {
+				@include columns(12);
+			}
+
+			article:last-of-type {
+				@include columns(12);
+			}
+		}	
+	}
+}

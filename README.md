@@ -3,6 +3,9 @@ A simple responsive boilerplate
 
 This is a really simple responsive boilerplate based on percentage widths/gutters. It's essentially a really simple grid that I like to use as a foundation for projects. It's mobile first, uses SASS and has some Grunt tasks ready for use. It works in IE8 and up (in IE8 it will just set a fixed width to the container which is configurable in _grid.scss).
 
+[Demo](http://andrecalvo.co.uk/boilerplate)
+
+
 Features
 --------
 
@@ -25,8 +28,8 @@ The following are found in sass/partials_grid.scss
 
 Usage
 --------
-*    Run "npm install" to install all node dependencies 
-*    Run "grunt watch" in terminal to get grunt running.
+*    Run npm install
+*    Run grunt watch
 *    To set columns use the columns() mixin. This takes in a parameter between 1 and however many columns you have set in your configuration.
-*    I've included some mixins and extra stuff I like using, for example an icon font and some mixins that can be useful.
-
+*    Use the group() mixin to clear floats.
+*    Use the full-width() mixin if you need a 100% width container or row() for a content wrapper.

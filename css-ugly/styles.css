@@ -382,7 +382,7 @@ a {
 
 main {
   width: 100%;
-  background: white; }
+  background: #E3E3E3; }
   main .intro {
     max-width: 1300px;
     margin: 0 auto;
@@ -412,8 +412,6 @@ main {
       float: left;
       margin: 0 2.5%;
       width: 95%;
-      font-size: 32px;
-      font-size: 2rem;
       margin-top: 32px;
       margin-top: 2rem;
       margin-bottom: 32px;
@@ -470,24 +468,20 @@ main {
       float: left;
       margin: 0 2.5%;
       width: 95%; }
-      main .guide article p {
-        padding-bottom: 32px;
-        padding-bottom: 2rem; }
       main .guide article ul {
         display: -moz-inline-stack;
         display: inline-block;
         zoom: 1;
         *display: inline; }
         main .guide article ul li {
-          list-style: none;
-          padding-bottom: 32px;
-          padding-bottom: 2rem; }
+          margin-left: 24px;
+          margin-left: 1.5rem; }
   main section[class*='example-'] {
     max-width: 1300px;
     margin: 0 auto;
     width: 1024px;
-    margin-bottom: 64px;
-    margin-bottom: 4rem;
+    padding-top: 32px;
+    padding-top: 2rem;
     background: white; }
     main section[class*='example-']:after {
       visibility: hidden;
@@ -512,8 +506,6 @@ main {
       float: left;
       margin: 0 2.5%;
       width: 95%;
-      font-size: 32px;
-      font-size: 2rem;
       padding-bottom: 32px;
       padding-bottom: 2rem; }
     main section[class*='example-'] p {
@@ -587,8 +579,8 @@ body {
   font-weight: 300; }
 
 h1 {
-  font-size: 28.8px;
-  font-size: 1.8rem;
+  font-size: 32px;
+  font-size: 2rem;
   color: #218AB2; }
 
 h2 {
@@ -605,78 +597,75 @@ p, li {
   /*===================
   768 and up - "Desktop"
   ===================*/
-  main {
-    width: 100%;
-    background: white; }
-    main .intro {
-      text-align: center; }
-      main .intro p {
-        display: -moz-inline-stack;
-        display: inline-block;
-        zoom: 1;
-        *display: inline;
-        float: left;
-        margin: 0 2.5%;
-        width: 61.66667%;
-        float: none; }
-      main .intro ul {
-        display: -moz-inline-stack;
-        display: inline-block;
-        zoom: 1;
-        *display: inline;
-        float: left;
-        margin: 0 2.5%;
-        width: 28.33333%;
-        margin-top: 32px;
-        margin-top: 2rem;
-        margin-bottom: 32px;
-        margin-bottom: 2rem;
-        float: none; }
-        main .intro ul li {
-          display: inline;
-          margin-right: 15px; }
-    main .guide article {
+  main .intro {
+    text-align: center; }
+    main .intro p {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
       *display: inline;
       float: left;
       margin: 0 2.5%;
-      width: 28.33333%; }
-      main .guide article ul {
-        display: -moz-inline-stack;
-        display: inline-block;
-        zoom: 1;
-        *display: inline; }
-    main section[class*='example-'].example-1 article {
+      width: 61.66667%;
+      float: none; }
+    main .intro ul {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
       *display: inline;
       float: left;
       margin: 0 2.5%;
-      width: 28.33333%; }
-    main section[class*='example-'].example-2 article {
+      width: 28.33333%;
+      margin-top: 32px;
+      margin-top: 2rem;
+      margin-bottom: 32px;
+      margin-bottom: 2rem;
+      float: none; }
+      main .intro ul li {
+        display: inline;
+        margin-right: 15px; }
+  main .guide article {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    float: left;
+    margin: 0 2.5%;
+    width: 28.33333%; }
+    main .guide article ul {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
-      *display: inline;
-      float: left;
-      margin: 0 2.5%;
-      width: 45%; }
-    main section[class*='example-'].example-3 article:first-of-type {
-      display: -moz-inline-stack;
-      display: inline-block;
-      zoom: 1;
-      *display: inline;
-      float: left;
-      margin: 0 2.5%;
-      width: 28.33333%; }
-    main section[class*='example-'].example-3 article:last-of-type {
-      display: -moz-inline-stack;
-      display: inline-block;
-      zoom: 1;
-      *display: inline;
-      float: left;
-      margin: 0 2.5%;
-      width: 61.66667%; } }
+      *display: inline; }
+  main section[class*='example-'].example-1 article {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    float: left;
+    margin: 0 2.5%;
+    width: 28.33333%; }
+  main section[class*='example-'].example-2 article {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    float: left;
+    margin: 0 2.5%;
+    width: 45%; }
+  main section[class*='example-'].example-3 article:first-of-type {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    float: left;
+    margin: 0 2.5%;
+    width: 28.33333%; }
+  main section[class*='example-'].example-3 article:last-of-type {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    float: left;
+    margin: 0 2.5%;
+    width: 61.66667%; } }

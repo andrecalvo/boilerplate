@@ -17,7 +17,7 @@ a {
 
 main {
 	@include full-width;
-	background: white;
+	background: #E3E3E3;
 
 	.intro {
 		@include row;
@@ -27,7 +27,6 @@ main {
 
 		h1 {
 			@include columns(12);
-			@include rem(font-size, 2);
 			@include rem(margin-top, 2);
 			@include rem(margin-bottom, 2);
 		}
@@ -58,33 +57,25 @@ main {
 		article {
 			@include columns(12);
 
-			p {
-				@include rem(padding-bottom, 2em);
-			}
-
 			ul {
 				@include inline-block;
 
 				li {
-					list-style: none;
-					@include rem(padding-bottom, 2);
+					@include rem(margin-left, 1.5);
 				}
 			}
 		}
-
-
 	}
 
 	section[class*='example-']{
 		@include row;
 		@include group;		
-		@include rem(margin-bottom, 4em);
+		@include rem(padding-top, 2);
 		background: white;
 
 		h2 {
 			@include columns(12);
-			@include rem(font-size, 2em);
-			@include rem(padding-bottom, 2em);
+			@include rem(padding-bottom, 2);
 
 		}
 

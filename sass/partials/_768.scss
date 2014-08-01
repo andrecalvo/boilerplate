@@ -3,9 +3,6 @@
 ===================*/
 
 main {
-	@include full-width;
-	background: white;
-
 	.intro {
 		text-align: center;
 
@@ -17,8 +14,7 @@ main {
 		ul {
 			@include columns(4);
 			@include rem(margin-top, 2);
-			@include rem(margin-bottom, 2);
-			
+			@include rem(margin-bottom, 2);			
 			float: none;
 
 			li {
@@ -36,8 +32,6 @@ main {
 				@include inline-block;
 			}
 		}
-
-
 	}
 
 	section[class*='example-'] {	

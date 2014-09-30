@@ -16,11 +16,11 @@ a {
 }
 
 main {
-	@include full-width;
+	@include wrapper-outer;
 	background: #E3E3E3;
 
 	.intro {
-		@include row;
+		@include wrapper-inner;
 		@include group;
 		background: white;
 		text-align: left;
@@ -49,7 +49,7 @@ main {
 	}
 
 	.guide {
-		@include row;
+		@include wrapper-inner;
 		@include group;
 		padding: 2em 0;
 		background: white;
@@ -68,7 +68,7 @@ main {
 	}
 
 	section[class*='example-']{
-		@include row;
+		@include wrapper-inner;
 		@include group;		
 		@include rem(padding-top, 2);
 		background: white;

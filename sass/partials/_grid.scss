@@ -12,11 +12,11 @@ $ie8-content-width: 1024px;
 
 $column-width: ( 100% / $columns ); 
 
-@mixin full-width {	
+@mixin wrapper-outer {	
 	width: 100%;
 }
 
-@mixin row {
+@mixin wrapper-inner {
 	@include group;
 	max-width: $content-width;
 	margin: 0 auto;
